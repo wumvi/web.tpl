@@ -1,0 +1,20 @@
+'raw':
+  local:
+    var: 'value'
+
+'class':
+  db-config:
+    class: \Core\Db\Model\PostgreSqlDbParam
+    param: [#posgresql-db]
+
+  db:
+    class: \Core\Db\Driver\PostgreSql
+    param: ['@db-config']
+
+  page.dao:
+    class: \Site\Page\Dao\StaticDao
+    param: '@db'
+
+  page.service:
+    class: \Site\Page\Service\StaticService
+    param: '@page.dao'

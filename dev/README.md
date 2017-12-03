@@ -1,0 +1,1 @@
+ln -s /www/template/dev/conf/nginx.conf /www/conf/template.conf

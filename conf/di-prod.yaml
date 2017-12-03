@@ -1,0 +1,9 @@
+include: 'di-base.yaml'
+
+raw:
+  posgresql-db:
+    host: "localhost"
+    port: 5432
+    user: user
+    pwd: pwd
+    db: db

@@ -1,0 +1,31 @@
+{% spaceless %}
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=9">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500&amp;subset=cyrillic" rel="stylesheet">
+
+        {% autoescape false %}
+        {% endautoescape %}
+
+        {% include 'common/head-tag.twig' %}
+
+        <meta name="msapplication-starturl" content="/?pinned=true"/>
+        <meta name="msapplication-navbutton-color" content="#f00"/>
+
+        {% block head %}{% endblock %}
+    </head>
+    <body>
+
+    {% block content %}{% endblock %}
+
+
+    {% autoescape false %}
+        {{ assetExtJs('/res/package/jquery/jquery.min.js') }}
+    {% endautoescape %}
+
+    {% block footer %}{% endblock %}
+
+    </body>
+    </html>
+{% endspaceless %}

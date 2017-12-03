@@ -1,0 +1,10 @@
+vars:
+  global-vars: 'global'
+
+index:
+  controller: \Site\Page\Controller\IndexController::indexAction
+  regexp:
+
+static.data:
+  controller: \Site\Page\Controller\IndexController::dataAction
+  regexp: /page/

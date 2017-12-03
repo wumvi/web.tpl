@@ -1,0 +1,27 @@
+{
+  "author": {
+    "name": "Vitaliy Kozlenko"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "node-sass": "*",
+    "js-yaml": "*",
+    "colors": "*",
+    "webpack": "^3.8.1",
+    "breakpoint-sass": "*",
+    "sass-loader": "*",
+    "css-loader": "*",
+    "extract-text-webpack-plugin": "*",
+    "set-blocking": "*",
+    "autoprefixer": "*",
+    "postcss-loader": "*",
+    "optimize-css-assets-webpack-plugin": "*"
+  },
+  "optionalDependencies": {},
+  "version": "1.3.4",
+  "license": "MIT",
+  "description": "template"
+}

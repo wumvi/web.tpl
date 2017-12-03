@@ -1,0 +1,46 @@
+{% spaceless %}
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, shrink-to-fit=no">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+    <meta property="og:type" content="article"/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+
+    {% if seo.title is defined %}
+        <meta property="og:title" content="{{ seo.title }}"/>
+        <title>{{ seo.title }}</title>
+    {% endif %}
+
+    {% if seo.description is defined %}
+        <meta property="og:description" content="{{ seo.description }}"/>
+        <meta name="description" content="{{ seo.description }}"/>
+    {% endif %}
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    {% if google is defined %}
+        <meta name="google-site-verification" content="{{ google.verification }}"/>
+    {% endif %}
+    {% if yandex is defined %}
+        <meta name='yandex-verification' content="{{ yandex.verification }}"/>
+    {% endif %}
+    <meta name='wmail-verification' content=""/>
+
+    <meta http-equiv="cleartype" content="on"/>
+
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link href="/res/icons/icon128.png" rel="icon"/>
+    <link href="/res/icons/icon128.png" rel="apple-touch-icon-precomposed"/>
+
+    {#<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet'>#}
+    {% autoescape false %}
+        {{ assetExtCss('/res/package/components-font-awesome/css/font-awesome.min.css') }}
+        {#{{ assetExtCss('/res/package/modal-window/public/res/bin/main.css') }}#}
+    {% endautoescape %}
+
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="MobileOptimized" content="320"/>
+
+{% endspaceless %}
